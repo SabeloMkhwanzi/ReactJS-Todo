@@ -72,7 +72,6 @@ class TodoContainer extends React.Component {
 
   //we will get the stored item(s)
   //and add back to the view once component mount.
-
   componentDidMount() {
     const temp = localStorage.getItem("todos");
     const loadedTodos = JSON.parse(temp);
