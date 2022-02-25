@@ -8,15 +8,15 @@ A basic ReactJS App
 
 This React tutorial React for beginners series. [Full Tutorial here by Ibaslogic](https://ibaslogic.com/react-tutorial-for-beginners/)  
 
-1 – React Tutorial: The Beginner's Guide to Learning React in 2020
-2 – Working with React Form and Handling Event 3 – How to implement CSS in Reactjs App
-4 – How to Edit Todos Items
-5 – Persisting React State in Local Storage
-6 – Getting Started With React Lifecycle Methods
-7 – Getting Started With React Hooks
-9 – Routing With React Router
-10 – How to add Hamburger Menu in React
-Part 11 – Deploying React App to GitHub Pages
+* React Tutorial: The Beginner's Guide to Learning React in 2022
+* Working with React Form and Handling Event 3 – How to implement CSS in Reactjs App
+* How to Edit Todos Items
+* Persisting React State in Local Storage
+* Getting Started With React Lifecycle Methods
+* Getting Started With React Hooks
+* Routing With React Router
+* How to add Hamburger Menu in React
+* Deploying React App to GitHub Pages
 
 Presently, three components are managing the stateful behaviour in the components directory. The `InputTodo`, `TodoItem` and the `TodoContainer`.
 
