@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SabeloMkhwanzi/ReactJS-Todo/static/css/main.a4700cff.css",
+    "main.js": "/SabeloMkhwanzi/ReactJS-Todo/static/js/main.01fa458d.js",
+    "index.html": "/SabeloMkhwanzi/ReactJS-Todo/index.html",
+    "main.a4700cff.css.map": "/SabeloMkhwanzi/ReactJS-Todo/static/css/main.a4700cff.css.map",
+    "main.01fa458d.js.map": "/SabeloMkhwanzi/ReactJS-Todo/static/js/main.01fa458d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4700cff.css",
+    "static/js/main.01fa458d.js"
+  ]
+}
