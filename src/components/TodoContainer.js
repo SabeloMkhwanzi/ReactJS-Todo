@@ -5,26 +5,6 @@ import InputTodo from "./InputTodo";
 import { v4 as uuidv4 } from "uuid";
 
 class TodoContainer extends React.Component {
-  state = {
-    todos: [
-      {
-        id: uuidv4(),
-        title: "Setup development environment",
-        completed: true,
-      },
-      {
-        id: uuidv4(),
-        title: "Develop website and add content",
-        completed: false,
-      },
-      {
-        id: uuidv4(),
-        title: "Deploy to live server",
-        completed: false,
-      },
-    ],
-  };
-
   handleChange = (id) => {
     this.setState((prevState) => ({
       todos: this.state.todos.map((todo) => {
@@ -72,6 +52,39 @@ class TodoContainer extends React.Component {
         return todo;
       }),
     });
+  };
+
+  //componentDidMount(). This is because you’ll often perform some sort of effects (or side-effects).
+  //For instance, making a network request,
+  //subscriptions, setting up a timer,
+  //setting up event listeners etc are examples of side
+  //effects that you can perform in this method
+
+  //on component mounts (i.e on page reload or on a subsequent visit),
+  //we will check if there are to-dos items present in the local storage,
+  // then, we grab them. This sounds like the logic should be in the componentDidMount lifecycle.
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.todo !== this.state.todos) {
+      const temp = JSON.stringify(this.state.todos);
+      localStorage.setItem("todos", temp);
+    }
+  }
+
+  //we will get the stored item(s)
+  //and add back to the view once component mount.
+
+  componentDidMount() {
+    const temp = localStorage.getItem("todos");
+    const loadedTodos = JSON.parse(temp);
+    if (loadedTodos) {
+      this.setState({
+        todos: loadedTodos,
+      });
+    }
+  }
+
+  state = {
+    todos: [],
   };
 
   render() {
