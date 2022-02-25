@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 A basic ReactJS App
 
-This React tutorial React for beginners series.
+This React tutorial React for beginners series. [Full Tutorial here by Ibaslogic](https://ibaslogic.com/react-tutorial-for-beginners/)  
 
 1 – React Tutorial: The Beginner's Guide to Learning React in 2020
 2 – Working with React Form and Handling Event 3 – How to implement CSS in Reactjs App
